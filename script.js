@@ -1,6 +1,7 @@
-// Assignment Code
+// Setting global variables
 var generateBtn = document.querySelector("#generate");
 
+// Made character types immutable
 const lowerCaseChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const upperCaseChars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "X", "Y", "Z"];
 const numberChars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -38,6 +39,7 @@ function generatePassword() {
 
 };
 
+// Validating character types
 function isListValid(listLength) {
     if (listLength < 1) {
         alert("You must select a character type")
@@ -69,7 +71,7 @@ function getPasswordLength() {
 };
 
 
-// Setting character types
+// Setting character types and getting user input
 function getPasswordCharacterList() {
 
     var passwordCharacterList = [];
