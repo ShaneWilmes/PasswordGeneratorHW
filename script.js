@@ -21,7 +21,7 @@ function generatePassword() {
 
     // Getting password length and character types from user
     const passwordLength = getPasswordLength();
-    const passwordCharacterList = getPasswordCharacterList() || [];
+    const passwordCharacterList = getPasswordCharacterList();
 
     if (!isListValid(passwordCharacterList.length)) {
         return
@@ -72,14 +72,13 @@ function getPasswordLength() {
 // Setting character types
 function getPasswordCharacterList() {
 
-    const passwordCharacterList = [];
+    var passwordCharacterList = [];
 
     var lowercaseOption = confirm("Would you like lower case letters?");
 
     if (lowercaseOption) {
         passwordCharacterList.push.apply(passwordCharacterList, lowerCaseChars);
     }
-
 
     var uppercaseOption = confirm("Would you like upper case letters?");
 
